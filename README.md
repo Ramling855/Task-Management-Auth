@@ -50,7 +50,7 @@ cd Task-Management-Auth
 ```bash
 npm install
 ```
-3.I configured with my credentials of firebase,
+3.I configured with my credentials of firebase.js file,
  if still you got problem then follow this step
 
 got to a firebase.js file in the src directory with your Firebase configuration:
