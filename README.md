@@ -42,7 +42,7 @@ This is a React-based task management application that allows users to manage th
 
 ```bash
 git clone https://github.com/Ramling855/Ramling855-Task-Management-Application.git
-
+cd your directory
 ```
 
 2. Install dependencies:
@@ -51,29 +51,7 @@ git clone https://github.com/Ramling855/Ramling855-Task-Management-Application.g
 npm install
 ```
 
-3. Create a `firebase.js` file in the `src` directory with your Firebase configuration:
-
-```javascript
-// src/firebase.js
-import firebase from "firebase/app";
-import "firebase/auth";
-
-const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
-};
-
-firebase.initializeApp(firebaseConfig);
-
-export const auth = firebase.auth();
-export const googleProvider = new firebase.auth.GoogleAuthProvider();
-```
-
-4. Start the development server:
+3. Start the development server:
 
 ```bash
 npm start
