@@ -50,8 +50,32 @@ cd Task-Management-Auth
 ```bash
 npm install
 ```
+3.I configured with my credentials of firebase,
+ if still you got problem then follow this step
 
-3. Start the development server:
+got to a firebase.js file in the src directory with your Firebase configuration:
+
+// src/firebase.js
+import firebase from "firebase/app";
+import "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_AUTH_DOMAIN",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+
+firebase.initializeApp(firebaseConfig);
+
+export const auth = firebase.auth();
+export const googleProvider = new firebase.auth.GoogleAuthProvider();
+
+
+
+4. Start the development server:
 
 ```bash
 npm start
