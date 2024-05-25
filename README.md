@@ -41,8 +41,8 @@ This is a React-based task management application that allows users to manage th
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Ramling855/Ramling855-Task-Management-Application.git
-cd your directory
+git clone https://github.com/Ramling855/Task-Management-Auth.git
+cd Task-Management-Auth
 ```
 
 2. Install dependencies:
